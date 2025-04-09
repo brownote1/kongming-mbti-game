@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>當我爆肝讀期中轉世成諸葛．亮力而為</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- 封面頁 -->
+    <div id="cover">
+      <h1>當我爆肝讀期中轉世成諸葛．亮力而為</h1>
+      <img src="image.png" alt="孔明帥照" />
+      <p>在期中考爆肝奮戰後，你意外轉世為三國時代的諸葛亮。面對歷史關鍵時刻，你會如何抉擇？完成十道選擇題，看看你是哪一型的孔明！</p>
+      <button onclick="startGame()">開始探索</button>
+    </div>
+
+    <!-- 題目區塊 -->
+    <div id="quiz" style="display:none;">
+      <h2 id="question"></h2>
+      <div id="options"></div>
+    </div>
+
+    <!-- 結果頁 -->
+    <div id="result" style="display:none;">
+      <h2>你的諸葛亮人格是：<span id="mbtiResult"></span></h2>
+      <p id="mbtiDescription"></p>
+      <h3>你可能與這些歷史人物相似：</h3>
+      <ul id="historicalMatches"></ul>
+      <h3>歷史上諸葛亮的推測人格：INFJ</h3>
+      <p>諸葛亮展現深謀遠慮、堅守信念、智慧與內省，經常為整體福祉思考未來戰略。他是一位典型的「預見型顧問」，冷靜而有遠見，極具理想與責任感。</p>
+      <button onclick="restartGame()">重新轉世</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
