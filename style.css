@@ -1,47 +1,74 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #fdfcf8;
+  background-color: #fff8f0; /* 淺暖底色 */
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #333;
+  color: #4b3f2f;
 }
 
 #app {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 24px;
+  background-color: #fffdf8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
 }
 
 h1, h2 {
   text-align: center;
+  color: #bc6c25; /* 主標題暖色 */
 }
 
 img {
   display: block;
   max-width: 100%;
-  margin: 20px auto;
-  border-radius: 10px;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 button {
   display: block;
-  background-color: #2d6a4f;
+  background-color: #e07a5f; /* 暖色系主色 */
   color: white;
-  padding: 12px 20px;
+  padding: 14px 24px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   font-size: 16px;
   cursor: pointer;
-  margin: 20px auto;
+  margin: 16px auto;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-  background-color: #40916c;
+  background-color: #d55d3e;
+  transform: translateY(-2px);
 }
 
 #options button {
-  margin: 10px 0;
+  margin: 12px 0;
   width: 100%;
   text-align: left;
+  background-color: #f4a261; /* 個別選項：溫暖橘 */
+  color: #fff;
+  font-weight: 500;
+}
+
+#options button:hover {
+  background-color: #e76f51;
+}
+
+#result {
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  text-align: left;
+  list-style-type: disc;
+  color: #6b4c3b;
 }
