@@ -1,4 +1,4 @@
-const questions = [
+const questions = [ 
   {
     question: "【1】劉備三顧茅廬時，你正在隱居隆中。你該如何回應？",
     options: [
@@ -125,7 +125,6 @@ function showResult() {
   document.getElementById("quiz").style.display = "none";
   document.getElementById("result").style.display = "block";
 
-  const mbti = ["E", "I", "S", "N", "T", "F", "J", "P"];
   const result = [
     mbtiTraits.E > mbtiTraits.I ? "E" : "I",
     mbtiTraits.S > mbtiTraits.N ? "S" : "N",
@@ -134,7 +133,6 @@ function showResult() {
   ].join("");
 
   const descriptions = {
-   
     ISTJ: { desc: "踏實可靠，堅守原則，注重秩序與責任。", match: ["曾國藩", "關羽"] },
     ISFJ: { desc: "關懷他人，謹慎細膩，默默奉獻。", match: ["黃月英", "賢內助們"] },
     INFJ: { desc: "理想主義者，有遠見與洞察力，內斂堅定。", match: ["諸葛亮", "林則徐"] },
@@ -151,10 +149,9 @@ function showResult() {
     ESFJ: { desc: "和諧型關懷者，善於建立人際關係。", match: ["孔融", "趙雲"] },
     ENFJ: { desc: "富魅力的領袖，關心群體，擅長鼓舞他人。", match: ["劉備", "孔子"] },
     ENTJ: { desc: "果斷有謀略，能制定遠大目標並實踐。", match: ["孫權", "諸葛恪"] }
-
-
   };
 
+  const mbtiInfo = descriptions[result];
   document.getElementById("mbtiResult").innerText = result;
   document.getElementById("mbtiDescription").innerText = mbtiInfo.desc;
   document.getElementById("historicalMatches").innerHTML = mbtiInfo.match.map(p => `<li>${p}</li>`).join("");
